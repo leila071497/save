@@ -1,0 +1,36 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style_newlist.css">
+<title>文章輸入</title>
+</head>
+<body>
+
+<div class="top">
+<img src="newlist.png" id="newlist">
+<img src="back.png" id="back">
+</div>
+
+<div class="white">
+<div id="account">
+<p>Sedny</p>
+</div>
+<img src="articleon.png" id="articleon">
+<img src="songlistoff.png" id="songlistoff" onclick="songlist()">
+
+<script>
+function finish(){
+  location.href="article.html";
+}
+function songlist(){
+  location.href="songarrange.html";
+}
+</script>
+
+<form action="save_article.php" method="POST">
+    <input type="text" id="title" name="title" value="標題"  placeholder="標題"/><br>
+  <textarea type="message" id="content" name="article" value="article"  placeholder=">
+<input type="submit" id="finish" value="完成">
+</form>
+</div>
+</body>
+</div>
